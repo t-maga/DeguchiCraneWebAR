@@ -13,7 +13,7 @@
     <script>
         document.getElementById('ar-button').addEventListener('click', function() {
             const userAgent = window.navigator.userAgent;
-            const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+            const isIOS = /iPhone|iPad|iPod|Macintosh/i.test(userAgent) && ('ontouchend' in document);
             const isAndroid = /Android/i.test(userAgent);
 
             if (isIOS) {
