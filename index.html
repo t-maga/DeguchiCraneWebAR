@@ -18,11 +18,11 @@
 
             if (isIOS) {
                 // iOSの場合、USDZファイルをAR Quick Lookで表示
-                const usdzUrl = 'https://YOUR_GITHUB_REPO_PATH/model.usdz'; // GitHubにアップしたusdzファイルのURLを記載してください
+                const usdzUrl = 'https://t-maga.github.io/DeguchiCraneWebAR/model.usdz'; // GitHubにアップしたusdzファイルのURLを記載してください
                 window.location.href = usdzUrl + '#allowsContentScaling=1';
             } else if (isAndroid) {
                 // Androidの場合、Scene ViewerでGLBファイルを表示
-                const glbUrl = 'https://YOUR_GITHUB_REPO_PATH/model.glb'; // GitHubにアップしたglbファイルのURLを記載してください
+                const glbUrl = 'https://t-maga.github.io/DeguchiCraneWebAR/model.glb'; // GitHubにアップしたglbファイルのURLを記載してください
                 const sceneViewerUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${glbUrl}&mode=ar_preferred#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;`;
                 window.location.href = sceneViewerUrl;
             } else {
